@@ -1,2 +1,2 @@
 # Horary2
-For Elsword
+For Elsword.
