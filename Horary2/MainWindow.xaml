@@ -1,0 +1,35 @@
+﻿<Window x:Class="Horary2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Horary2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="100" Width="100" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}" MouseEnter="Window_MouseEnter" MouseLeave="Window_MouseLeave" MouseDown="Window_MouseDown" Topmost="True">
+    <Grid>
+        <Image x:Name="BackGround" HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Source="Img/BackGround.png" Opacity="0"/>
+        <Image x:Name="Back" HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Source="Img/Back.png"/>
+        <Image x:Name="ColorPlate_light_Blue" HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Source="Img/ColorPlate_light_Blue.png" Opacity="0"/>
+        <Image x:Name="ColorPlate_light_Purple" HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Source="Img/ColorPlate_light_Purple.png" Opacity="0"/>
+        <Image x:Name="ColorPlate_light_Yellow" HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Source="Img/ColorPlate_light_Yellow.png" Opacity="0"/>
+        <Image x:Name="ColorPlate_light_White" HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Source="Img/ColorPlate_light_White.png" Opacity="0"/>
+        <Image x:Name="Interval" HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Source="Img/Interval.png"/>
+        <Image x:Name="TopRing" HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Source="Img/TopRing.png"/>
+        <Image x:Name="Astrolabe_Blue" HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Source="Img/Astrolabe_Blue.png" Opacity="0.25"/>
+        <Image x:Name="Astrolabe_Pueple" HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Source="Img/Astrolabe_Pueple.png" Opacity="0.25"/>
+        <Image x:Name="Astrolabe_Yellow" HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Source="Img/Astrolabe_Yellow.png" Opacity="0.25"/>
+        <Image x:Name="Astrolabe_White" HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Source="Img/Astrolabe_White.png" Opacity="0.25"/>
+        <Image x:Name="Pointer" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Source="Img/Pointer.png">
+            <Image.RenderTransformOrigin>
+                <Point X="0.5" Y="0.5"></Point>
+            </Image.RenderTransformOrigin>
+            <Image.RenderTransform>
+                <RotateTransform Angle="0"></RotateTransform>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="CenterPlate" HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Source="Img/CenterPlate.png"/>
+        <Image x:Name="CenterStar" HorizontalAlignment="Center" Height="28"  Width="28" VerticalAlignment="Center" Source="Img/CenterStar.png" Opacity="0.25" MouseEnter="CenterStar_MouseEnter" MouseLeave="CenterStar_MouseLeave" MouseDown="CenterStar_MouseDown" />
+        <Image x:Name="CloseButton" HorizontalAlignment="Center" Height="14" VerticalAlignment="Top" Width="14" Source="Img/Close.png" Margin="83,2,3,0" Opacity="0"/>
+        <Image x:Name="CloseButton_Outline" HorizontalAlignment="Center" Height="14" VerticalAlignment="Top" Width="14" Source="Img/Outline.png" Margin="83,2,2,0" Opacity="0" MouseEnter="CloseButton_Outline_MouseEnter" MouseLeave="CloseButton_Outline_MouseLeave" MouseDown="CloseButton_Outline_MouseDown"/>
+    </Grid>
+</Window>
