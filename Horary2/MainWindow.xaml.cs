@@ -99,14 +99,26 @@ namespace Horary2
                 ColorPlate_light_Switch(ColorPlate_light_Blue, true);
                 Astrolabe_Switch(Astrolabe_Blue, true);
             }
-            else {
-                IsTiming = false;
-                Timer.Stop();
-                SetPointerAngle(0);
-                TimerCount = 0f;
-                ColorPlate_light_AllOff();
-                Astrolabe_AllOff();
-                CenterStar.Opacity = CenterStarOpacity.normal;
+            else
+            {
+                if (e.LeftButton == MouseButtonState.Pressed)
+                {
+                    //Pause
+                    IsTiming = false;
+                    Timer.Stop();
+                }
+                else if (e.RightButton == MouseButtonState.Pressed)
+                {
+                    //Reset
+                    IsTiming = false;
+                    Timer.Stop();
+                    SetPointerAngle(0);
+                    TimerCount = 0f;
+                    ColorPlate_light_AllOff();
+                    Astrolabe_AllOff();
+                    CenterStar.Opacity = CenterStarOpacity.normal;
+                }
+
             }
         }
 
